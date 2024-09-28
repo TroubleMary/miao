@@ -16,7 +16,7 @@
     <a href="xxx" download="xxx.pdf">点我下载文件</a>
     <br>
     <div>
-         <img src="sadsadasda.jpg" alt="" height="150" width="150">
+         <img src="C:\Users\26628\Pictures\Screenshots\屏幕截图(60).png" alt="" height="150" width="150">
 
     </div>
     <hr>
@@ -62,38 +62,110 @@
         <dd>豆豆</dd>
     </dl>
     <hr>
-    <h2>Goodle搜索</h2>
-    <input type="text">
+    <h2>百度搜索</h2>
+    <form action="https://www.baidu.com/s" target="_blank">
+        <input type="text" name="wd">
+        <input type="text" hidden name="ie" value="utf-8">
+    <button type="submit">在新窗口打开搜索结果</button>
+    </form>
+    
     <hr>
-    <p>个人信息调查表</p>
-    <p>性别</p>
-    <p>年龄</p>
-    <p>生日</p>
-    <p>生辰</p>
-    <p>照片<br>     点我上传照片，我比文件上传按钮好看</p>
-    <p>自我介绍</p>
+    <form action="">
+        <dl>
+            <dt>个人信息调查表</dt>
+            <dt>性别</dt>
+              <dd>
+                <label><input type="radio" name="11">男</label>
+                <label><input type="radio" name="11">女</label>
+            </dd>
+            <dt>性别</dt>
+            <dd><select>
+                <option value="">请选择</option>
+                <optgroup label="少年">
+                    <option value="">1-6岁</option>
+                    <option value="">6-12岁</option>
+                </optgroup>
+                <optgroup label="青年">
+                    <option value="">12-18岁</option>
+                    <option value="">6-12岁</option>
+                </optgroup>
+                <optgroup label="少年"></optgroup>
+                    <option value="">12-18岁</option>
+                    <option value="">6-12岁</option>
+                </optgroup>
+            </select></dd>
+            <dt>生日</dt>
+            <dd><input type="date"></dd>
+            <dt>生辰</dt>
+            <dd><input type="time"></dd>
+            <dt>照片</dt>
+            <dd><label><input type="file" hidden>点我上传照片，我比文件上传按钮好看</label></dd>
+            <dt>自我介绍</dt>
+            <dd>
+                <textarea cols="25" rows="15" name="" id="">&lt;/textarea&gt;</textarea>
+            </dd>
+        </dl>
+        <fieldset disabled>
+            <legend>这里全部禁用了</legend>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </fieldset>
 
-
-
-
-
-
-
-
-
-
+        <div>
+            <button type="submit">提交</button><button type="reset">重置</button>
+        </div>
+    </form>
+    <hr>
+   <table border="1">
+    <col>
+    <col bgcolor="red">
+     <tr>
+        <th>编号</th>
+        <th>品名</th>
+        <th>进价</th>
+        <th>出价</th>
+     </tr>
+     <tr>
+        <th>aaa</th>
+        <th>a</th>
+        <th rowspan="2">a</th>
+        <th>a</th>
+     </tr>
+     <tr>
+        <th>a</th>
+        <th>a</th>
+        <th>a</th>
+     </tr>
+     <tr>
+        <th>a</th>
+        <th>a</th>
+        <th>a</th>
+        <th>a</th>
+     </tr>
+     <tr>
+        <th>a</th>
+        <th>a</th>
+        <th>a</th>
+        <th>a</th>
+     </tr>
+   </table>
     <hr>
 
 
 
 
-    <hr>
-    <hr>
-    <a href="">小米</a>
-    <img src="" alt="">
-    <p>aaa  bbbbb</p>
-    <p>aaa bbbbb</p>
-    <p>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<</p><span></span>
+
+    <hr>  
+      <a href="https://xiaomi.com" target="kkk">小米</a>
+      <div></div>
+      <iframe name="kkk" src="https://www.baidu.com" frameborder="1"></iframe>
+        <div>aaa&nbsp;&nbsp;&nbsp;&nbsp;bbbbb</div>
+    <pre>
+    aaa       bbbbb
+    </pre>
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&nbsp;&lt;span&gt;&lt;/span&gt;
     <div id="dibu"></div>
 </body>
 </html>
