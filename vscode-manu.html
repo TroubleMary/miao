@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .a {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+        }
+        .sum {
+            color: white;
+            position: absolute;
+            width: 50px;
+            height: 20px;
+        }
+        .edit {
+            left: 50px;
+        }
+        .selection {
+            left: 100px;
+        }
+        .view {
+            left: 190px;
+        }
+        .go {
+            left: 240px;
+        }
+        .run {
+            left: 280px;
+        }
+        .terminal {
+            left: 330px;
+        }
+        .help {
+            left: 410px;
+        }
+        div > div > div {
+            width: 200px;
+            height: 500px;
+            background-color: dimgrey;
+            display: none;
+        }
+
+        .sum:hover > div {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="a">
+       <div class="file sum">File
+        <div class="f"></div>
+       </div>
+       <div class="edit sum">Edit
+        <div class="e"></div>
+       </div>
+       <div class="selection sum">Selection
+        <div class="s"></div>
+       </div>
+       <div class="view sum">View
+        <div class="v"></div>
+       </div>
+       <div class="go sum">Go
+        <div class="g"></div>
+       </div>
+       <div class="run sum">Run
+        <div class="r"></div>
+       </div>
+       <div class="terminal sum">Terminal
+        <div class="t"></div>
+       </div>
+       <div class="help sum">Help
+        <div class="h"></div>
+       </div>
+    </div>
+</body>
+</html>
