@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.a {
+            width: 600px;
+            margin: auto;
+        }
+        div.a > div {
+            width: 180px;
+            height: 40px;
+            box-sizing: border-box;
+            border: 3px black solid;
+            float: left;
+            background-color: pink;
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        div.a > div:nth-child(3n+1) {
+               margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+   <div class="a">
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+   </div>
+</body>
+</html>
