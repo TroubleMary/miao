@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes insmile {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(-180deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+        @keyframes smile {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .smile {
+            
+            height: 20px;
+            width: 20px;
+            border: 1px red solid;
+            animation: smile 5s infinite linear ;
+            position: absolute;
+
+        }
+        .a {
+            top: 100px;
+            left: 100px;
+            height: 500px;
+            width: 500px;
+            position: relative;
+            animation: insmile 5s infinite linear ;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="smile">笑</div>
+    </div>
+        
+    
+</body>
+</html>
