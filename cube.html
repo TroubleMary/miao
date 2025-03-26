@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            width: 500px;
+            height: 500px;
+            transform-style: preserve-3d;
+            position: relative;
+            transition: 10s;
+            transform: perspective(800px) rotatex(0deg) rotatey(0deg);
+            &:hover {
+                transform: perspective(800px) rotatex(360deg) rotatey(360deg);
+            }
+
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            position: absolute;
+            inset: 0 0 0 0;
+            margin:auto;
+        }
+        .a1 {
+            transform: translatez(-100px);
+            background-color: red;
+        }
+        .a2 {
+            transform: translatex(-100px) rotatey(-90deg);
+            background-color: green;
+        }
+        .a3 {
+            transform: translatex(100px) rotatey(90deg);
+            background-color: blue;
+        }
+        .a4 {
+            transform: translatey(-100px) rotatex(90deg);
+            background-color: violet;
+        }
+        .a5 {
+            transform: translatey(100px) rotatex(-90deg);
+            background-color: bisque;
+        }
+        .a6 {
+            transform: translatez(100px);
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div class="a1"></div>
+    <div class="a2"></div>
+    <div class="a3"></div>
+    <div class="a4"></div>
+    <div class="a5"></div>
+    <div class="a6"></div>
+    </main>
+</body>
+</html>
